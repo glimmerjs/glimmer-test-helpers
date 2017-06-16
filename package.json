@@ -1,0 +1,30 @@
+{
+  "name": "@glimmer/test-helpers",
+  "version": "0.0.0",
+  "description": "Test helpers for Glimmer applications",
+  "repository": "https://github.com/glimmerjs/glimmer-test-helpers",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/commonjs/es5/index.js",
+  "module": "dist/modules/es2017/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "ember build",
+    "prepublish": "npm run build",
+    "postpublish": "git push origin master --tags"
+  },
+  "dependencies": {
+    "@glimmer/compiler": "v0.24.0-beta.5",
+    "@glimmer/component": "^0.4.0",
+    "@glimmer/wire-format": "v0.24.0-beta.5",
+    "simple-dom": "^0.3.2"
+  },
+  "devDependencies": {
+    "@glimmer/build": "^0.6.2",
+    "@types/qunit": "^2.0.31",
+    "ember-cli": "^2.12.0",
+    "typescript": "^2.2.1"
+  }
+}
