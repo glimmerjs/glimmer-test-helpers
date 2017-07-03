@@ -15,16 +15,14 @@
     "prepublish": "npm run build",
     "postpublish": "git push origin master --tags"
   },
-  "dependencies": {
-    "@glimmer/compiler": "^0.24.0-beta.6",
-    "@glimmer/component": "^0.4.0",
-    "@glimmer/wire-format": "^0.24.0-beta.6",
-    "simple-dom": "^0.3.2"
-  },
   "devDependencies": {
     "@glimmer/build": "^0.6.2",
+    "@glimmer/component": "^0.4.0",
     "@types/qunit": "^2.0.31",
     "ember-cli": "^2.12.0",
     "typescript": "^2.2.1"
+  },
+  "peerDependencies": {
+    "@glimmer/component": ">= 0.4.0"
   }
 }
