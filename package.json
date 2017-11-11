@@ -1,6 +1,6 @@
 {
   "name": "@glimmer/test-helpers",
-  "version": "0.30.0",
+  "version": "0.30.2",
   "description": "Test helpers for Glimmer applications",
   "repository": "https://github.com/glimmerjs/glimmer-test-helpers",
   "license": "MIT",
