@@ -1,8 +1,7 @@
 import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
 import { getApp } from './app';
 
-type SerializedTemplateWithLazyBlock<T> = any;
-type TemplateMeta = any;
+type SerializedTemplateWithLazyBlock = any;
 
 export default function setupRenderingTest(hooks: NestedHooks): void {
   hooks.beforeEach(function beforeEach() {
@@ -16,7 +15,7 @@ export default function setupRenderingTest(hooks: NestedHooks): void {
   });
 }
 
-function render(precompiledTemplate: SerializedTemplateWithLazyBlock<TemplateMeta>): Promise<void> {
+function render(precompiledTemplate: SerializedTemplateWithLazyBlock): Promise<void> {
   let app = this.app;
   let containerElement = document.createElement('div');
 
