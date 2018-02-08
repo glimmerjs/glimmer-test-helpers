@@ -32,12 +32,11 @@ function render(precompiledTemplate: SerializedTemplateWithLazyBlock): Promise<v
   });
 
   app.renderComponent('test-container', containerElement);
-  app.boot();
-
-  this.containerElement = containerElement;
-  this.app = app;
-
-  return Promise.resolve();
+  return Promise.resolve(app.boot())
+    .then(() => {
+      this.containerElement = containerElement;
+      this.app = app;
+    });
 }
 
 async function settled(): Promise<void> {
