@@ -5,10 +5,8 @@ module.exports = function() {
   let external = [
     '@glimmer/component',
   ];
-  let vendorTrees = external.map(packageDist);
 
   return build({
-    vendorTrees,
     external
   });
 };
