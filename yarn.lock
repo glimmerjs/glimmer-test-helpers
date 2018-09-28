@@ -46,70 +46,93 @@
     tslint "^5.9.1"
     typescript "~2.6.1"
 
-"@glimmer/component@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/component/-/component-0.4.0.tgz#2cd491045f4d86502cf4f3249f8f6c51de046b0c"
+"@glimmer/component@^0.9.1":
+  version "0.9.1"
+  resolved "http://registry.npmjs.org/@glimmer/component/-/component-0.9.1.tgz#9c103457ee0c9e0e9ffb6e7957c151bb10378383"
   dependencies:
     "@glimmer/di" "^0.1.9"
     "@glimmer/env" "^0.1.7"
-    "@glimmer/reference" "^0.24.0-beta.4"
-    "@glimmer/runtime" "^0.24.0-beta.4"
-    "@glimmer/util" "^0.24.0-beta.4"
+    "@glimmer/reference" "^0.31.0"
+    "@glimmer/runtime" "^0.31.0"
+    "@glimmer/util" "^0.31.0"
 
 "@glimmer/di@^0.1.9":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.1.11.tgz#a6878c07a13a2c2c76fcde598a5c97637bfc4280"
 
+"@glimmer/encoder@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/encoder/-/encoder-0.31.0.tgz#a4daf4aea35aaec1373007169aea2f50e155e993"
+
 "@glimmer/env@^0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@glimmer/env/-/env-0.1.7.tgz#fd2d2b55a9029c6b37a6c935e8c8871ae70dfa07"
 
-"@glimmer/interfaces@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.24.0.tgz#ad92a9fcfb14f1c81daa15b4809a08b1131de476"
+"@glimmer/interfaces@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/interfaces/-/interfaces-0.31.0.tgz#642764765b266d5cf921f64354e06a3112551081"
   dependencies:
-    "@glimmer/wire-format" "^0.24.0"
+    "@glimmer/wire-format" "^0.31.0"
 
-"@glimmer/object-reference@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/object-reference/-/object-reference-0.24.0.tgz#752299a7751b97e2a45c592e27f688c108b88f1d"
+"@glimmer/low-level@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/low-level/-/low-level-0.31.0.tgz#c5ed9c825fa67498f5285e8fe8003ec54d58d826"
+
+"@glimmer/opcode-compiler@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/opcode-compiler/-/opcode-compiler-0.31.0.tgz#a25aa9bed6d3cbdde4bae3b7fc02a91d4fdd1e4e"
   dependencies:
-    "@glimmer/reference" "^0.24.0"
-    "@glimmer/util" "^0.24.0"
+    "@glimmer/encoder" "^0.31.0"
+    "@glimmer/interfaces" "^0.31.0"
+    "@glimmer/program" "^0.31.0"
+    "@glimmer/util" "^0.31.0"
+    "@glimmer/vm" "^0.31.0"
+    "@glimmer/wire-format" "^0.31.0"
 
-"@glimmer/object@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/object/-/object-0.24.0.tgz#0450ccf40db57651ad82562ae32384068375bef3"
+"@glimmer/program@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/program/-/program-0.31.0.tgz#0a535154d52ca14f821f70880ec8eb12dc1830de"
   dependencies:
-    "@glimmer/object-reference" "^0.24.0"
-    "@glimmer/util" "^0.24.0"
+    "@glimmer/encoder" "^0.31.0"
+    "@glimmer/interfaces" "^0.31.0"
+    "@glimmer/util" "^0.31.0"
 
-"@glimmer/reference@^0.24.0", "@glimmer/reference@^0.24.0-beta.4":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.24.0.tgz#80cabb9aeb9c99b97c83377b8e1fe9b34c933533"
+"@glimmer/reference@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/reference/-/reference-0.31.0.tgz#b4908e4549f54fec69d2a4b515c4e75c78b7a363"
   dependencies:
-    "@glimmer/util" "^0.24.0"
+    "@glimmer/util" "^0.31.0"
 
-"@glimmer/runtime@^0.24.0-beta.4":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/runtime/-/runtime-0.24.0.tgz#e4602ccfd271388e12e56f991c8a86608b3b6bb3"
+"@glimmer/runtime@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/runtime/-/runtime-0.31.0.tgz#6c668a053156e7ed2e8573acc5bed3bfd238b6a8"
   dependencies:
-    "@glimmer/interfaces" "^0.24.0"
-    "@glimmer/object" "^0.24.0"
-    "@glimmer/object-reference" "^0.24.0"
-    "@glimmer/reference" "^0.24.0"
-    "@glimmer/util" "^0.24.0"
-    "@glimmer/wire-format" "^0.24.0"
+    "@glimmer/interfaces" "^0.31.0"
+    "@glimmer/low-level" "^0.31.0"
+    "@glimmer/opcode-compiler" "^0.31.0"
+    "@glimmer/program" "^0.31.0"
+    "@glimmer/reference" "^0.31.0"
+    "@glimmer/util" "^0.31.0"
+    "@glimmer/vm" "^0.31.0"
+    "@glimmer/wire-format" "^0.31.0"
 
-"@glimmer/util@^0.24.0", "@glimmer/util@^0.24.0-beta.4":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.24.0.tgz#c6e086e943282197cb533eb59ab0e0fb395d6adc"
+"@glimmer/util@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/util/-/util-0.31.0.tgz#45e353a7dcaffe6df00cc3d729153ae6121cf0e4"
 
-"@glimmer/wire-format@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.24.0.tgz#f48109ff79bc9f7c18814970718c992ef793f101"
+"@glimmer/vm@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/vm/-/vm-0.31.0.tgz#5ea4b84723e184a869a09f6a24a3715eb9056599"
   dependencies:
-    "@glimmer/util" "^0.24.0"
+    "@glimmer/interfaces" "^0.31.0"
+    "@glimmer/program" "^0.31.0"
+    "@glimmer/util" "^0.31.0"
+
+"@glimmer/wire-format@^0.31.0":
+  version "0.31.0"
+  resolved "http://registry.npmjs.org/@glimmer/wire-format/-/wire-format-0.31.0.tgz#5a12e7a770a981ce9ea3a7daf737433bd6cd03d9"
+  dependencies:
+    "@glimmer/util" "^0.31.0"
 
 "@types/qunit@^1.16.30":
   version "1.16.31"
