@@ -58,6 +58,12 @@ function render(
         `component-manager:/${app.rootName}/component-managers/test-container`,
         CustomComponentManager
       );
+
+      /*
+       * Register the main ComponentManager for everything else to use as their
+       * default
+       */
+      registry.register(`component-manager:/${app.rootName}/component-managers/main`, ComponentManager);
     }
   });
 
