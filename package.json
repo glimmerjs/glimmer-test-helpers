@@ -16,8 +16,8 @@
     "postpublish": "git push origin master --tags"
   },
   "devDependencies": {
-    "@glimmer/application-pipeline": "file:./glimmer-application-pipeline-v0.11.1.tgz",
-    "@glimmer/build": "github:rondale-sc/glimmer-build#allow-environment-to-be-set",
+    "@glimmer/application-pipeline": "^0.11.2",
+    "@glimmer/build": "^0.9.1",
     "@glimmer/component": "^0.9.1",
     "@glimmer/inline-precompile": "^1.0.1",
     "@types/qunit": "^2.0.31",
@@ -25,7 +25,7 @@
     "broccoli-file-creator": "^2.1.1",
     "broccoli-funnel": "^2.0.1",
     "broccoli-merge-trees": "^2.0.0",
-    "ember-cli": "^3.4.3",
+    "ember-cli": "~3.4.3",
     "typescript": "~2.6.0"
   },
   "peerDependencies": {
