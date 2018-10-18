@@ -2,6 +2,8 @@
 
 [![npm version](https://badge.fury.io/js/%40glimmer%2Ftest-helpers.svg)](https://badge.fury.io/js/%40glimmer%2Ftest-helpers)
 
+[![Build Status](https://travis-ci.org/glimmerjs/glimmer-test-helpers.svg?branch=master)](https://travis-ci.org/glimmerjs/glimmer-test-helpers)
+
 ## Installation
 
 Add this package to your project with Yarn:
