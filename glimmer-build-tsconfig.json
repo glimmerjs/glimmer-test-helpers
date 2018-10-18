@@ -9,6 +9,7 @@
     "inlineSources": true,
     "inlineSourceMap": true,
     "declaration": true,
+    "outDir": "dist",
     "newLine": "LF",
     "types": [
       "qunit"

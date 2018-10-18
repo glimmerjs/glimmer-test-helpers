@@ -11,21 +11,34 @@
   "module": "dist/modules/es2017/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
+    "test": "ember test",
     "build": "ember build",
     "prepublish": "npm run build",
     "postpublish": "git push origin master --tags"
   },
   "devDependencies": {
-    "@glimmer/build": "^0.8.4",
+    "@glimmer/application-pipeline": "^0.11.2",
+    "@glimmer/build": "^0.9.1",
     "@glimmer/component": "^0.9.1",
+    "@glimmer/inline-precompile": "^1.0.1",
     "@types/qunit": "^2.0.31",
-    "ember-cli": "^2.12.0",
+    "broccoli-debug": "^0.6.5",
+    "broccoli-file-creator": "^2.1.1",
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli": "~3.4.3",
     "typescript": "~2.6.0"
   },
   "peerDependencies": {
     "@glimmer/component": ">= 0.9.1"
   },
+  "resolutions": {
+    "@glimmer/application-pipeline/**/heimdalljs": "^0.2.6"
+  },
   "publishConfig": {
     "access": "public"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
   }
 }
