@@ -11,6 +11,7 @@
   "module": "dist/modules/es2017/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
+    "test": "ember test",
     "build": "ember build",
     "prepublish": "npm run build",
     "postpublish": "git push origin master --tags"
