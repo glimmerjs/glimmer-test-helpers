@@ -1,8 +1,8 @@
 import Component, {
   ComponentManager,
-  setPropertyDidChange,
   RootReference
 } from "@glimmer/component";
+import { setPropertyDidChange } from "@glimmer/tracking";
 import { getContext } from "./setup-context";
 
 type SerializedTemplateWithLazyBlock = any;
