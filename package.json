@@ -31,8 +31,8 @@
     "typescript": "~2.6.0"
   },
   "peerDependencies": {
-    "@glimmer/component": ">= 0.13.0",
-    "@glimmer/tracking": ">= 0.13.0"
+    "@glimmer/component": ">= 0.14.0-alpha.3",
+    "@glimmer/tracking": ">= 0.14.0-alpha.1"
   },
   "resolutions": {
     "@glimmer/application-pipeline/**/heimdalljs": "^0.2.6"
